@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>Professional Career Service</title>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:500,600,700" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
+    <!--Jquery-->
+    <script src="./vendor/jquery/jquery.min.js"></script>
+    <!--Bootstrap 4-->
+    <script src="./vendor/bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./vendor/bootstrap/bootstrap.min.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!--Scripts-->
+    <script src="./js/scripts.js"></script>
+    <!--Styles-->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<main>
+    <section class="main">
+        <section class="choose-amount">
+            <div class="container">
+                <h3 class="donate-title text-center mb-4">DONATE TO PCS</h3>
+                <h4 class="quote-subtitle text-center">Helping someone with their Parnassah is the highest level of
+                    Tzedaka
+                    (Rambam)</h4>
+                <div class="amounts">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <div class="amount-wrap">
+                                <label for="amountXS">
+                                    <span class="package-amount">$1000</span>
+                                    <span class="package-name">PARNAS HASHANASH</span>
+                                    <input type="radio" name="amount" id="amountXS">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <div class="amount-wrap">
+                                <label for="amountSM">
+                                    <span class="package-amount">$750</span>
+                                    <span class="package-name">PARNAS CHATZI HASHANASH</span>
+                                    <input type="radio" name="amount" id="amountSM">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <div class="amount-wrap">
+                                <label for="amountMD">
+                                    <span class="package-amount">$500</span>
+                                    <span class="package-name">PARNAS HACHODESH</span>
+                                    <input type="radio" name="amount" id="amountMD">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <div class="amount-wrap">
+                                <label for="amountLG">
+                                    <span class="package-amount">$360</span>
+                                    <span class="package-name">PARNAS HASHAVUAH</span>
+                                    <input type="radio" name="amount" id="amountLG">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <div class="amount-wrap">
+                                <label for="amountXL">
+                                    <span class="package-amount">$180</span>
+                                    <span class="package-name">PARNAS HAYOIM</span>
+                                    <input type="radio" name="amount" id="amountXL">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <div class="amount-wrap">
+                                <label for="amountXXL">
+                                    <span class="package-amount">$72</span>
+                                    <span class="package-name">PARNOSAH PARTNER</span>
+                                    <input type="radio" name="amount" id="amountXXL">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <div class="amount-wrap">
+                                <label for="amountXXXL">
+                                    <span class="package-amount">$54</span>
+                                    <span class="package-name">PCS DONOR</span>
+                                    <input type="radio" name="amount" id="amountXXXL">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <div class="amount-wrap">
+                                <label for="amountXXXXL">
+                                    <span class="package-amount">$36</span>
+                                    <span class="package-name">FRIENDS OF PCS</span>
+                                    <input type="radio" name="amount" id="amountXXXXL">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-amount mb-4 mb-sm-0">
+                    <div class="custom-amount-container">
+                        <h5>Enter Your Donation Amount</h5>
+                        <div class="pcs-input-container d-flex justify-content-center align-items-center">
+                            <i class="fas fa-dollar-sign"></i>
+                            <input type="text" class="pcs-input form-control" placeholder="">
+                            <span class="notation">.00</span>
+                        </div>
+                    </div>
+                    <div class="special-offer">
+                        <p class="m-0 special-offer-text"><span>*</span>Special gift for<br>
+                            donations of <span>$500</span><br>and above.</p>
+                    </div>
+                </div>
+                <div class="frequency pt-sm-4 pt-lg-5">
+                    <div class="frequency-options d-flex flex-column flex-sm-row justify-content-around align-items-center">
+                        <div id="freqOptionOnce" class="frequency-option one-time-freq mr-0 mr-sm-4 mb-4 mb-sm-0">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="oneTimeDonation"
+                                       name="donationFrequency" value="oneTime">
+                                <label class="custom-control-label" for="oneTimeDonation">ONE TIME DONATION</label>
+                            </div>
+                        </div>
+                        <div id="freqOptionRecurring" class="frequency-option">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="recurringDonation"
+                                       name="donationFrequency"
+                                       value="recurring">
+                                <label class="custom-control-label" for="recurringDonation">RECURRING DONATION</label>
+                            </div>
+                            <div class="d-flex">
+                                <select class="form-control mr-3">
+                                    <option value="Monthly" checked>Monthly</option>
+                                    <option value="Yearly">Yearly</option>
+                                </select>
+                                <select class="form-control">
+                                    <option value="12 Months" checked>12 Months</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="additional-info">
+            <div class="container">
+                <h5 class="section-title mb-5">
+                    ADDITIONAL INFORMATION <span class="text-muted">(optional)</span>
+                </h5>
+                <div class="form-box">
+                    <div class="row">
+                        <div class="col-12 col-sm-8">
+                            <div class="form-group">
+                                <label class="pcs-form-label">Donation Type</label>
+                                <div class="row d-flex align-items-center justify-content-between px-3">
+                                    <div class="col-12 col-sm-4 custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="inMemoryOf"
+                                               name="donationPurpose">
+                                        <label class="custom-control-label" for="inMemoryOf">In memory of</label>
+                                    </div>
+                                    <div class="col-12 col-sm-4 custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="inHonorOf"
+                                               name="donationPurpose">
+                                        <label class="custom-control-label" for="inHonorOf">In honor of</label>
+                                    </div>
+                                    <div class="col-12 col-sm-4 custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="forTheRecovery"
+                                               name="donationPurpose">
+                                        <label class="custom-control-label" for="forTheRecovery">For the recovery
+                                            of</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-sm-5">
+                            <div class="form-group">
+                                <div class="pcs-input-container">
+                                    <label class="pcs-form-label floating-label">Name</label>
+                                    <input placeholder="" type="text" class="pcs-input form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mb-1">Have us notify them/their family that a gift has been made in their name:</p>
+                    <div class="form-group">
+                        <label class="pcs-form-label-light">Please enter the recipient's address (with city, state, and
+                            zip), or email
+                            address, and your message below.</label>
+                        <input placeholder="" type="text" class="pcs-input form-control">
+                    </div>
+                    <div class="form-group">
+                        <label class="pcs-form-label">Additional comments</label>
+                        <textarea placeholder="" type="text" class="pcs-input pcs-textarea form-control"></textarea>
+                    </div>
+                </div>
+                <div class="custom-control custom-checkbox mb-3">
+                    <input type="checkbox" class="custom-control-input" id="emailReceipt">
+                    <label class="custom-control-label" for="emailReceipt">Please mail a receipt to the address above
+                        (in
+                        addition to the receipt I will receive via email).</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="addEmailingList">
+                    <label class="custom-control-label" for="addEmailingList">Please add me to the Emailing List</label>
+                </div>
+            </div>
+        </section>
+        <section class="personal-info">
+            <div class="container">
+                <h5 class="section-title mb-4">
+                    PERSONAL INFORMATION
+                </h5>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 mb-3 mb-sm-0">
+                            <div class="pcs-input-container">
+                                <label class="pcs-form-label floating-label">First Name<span>*</span></label>
+                                <input placeholder="" type="text" class="pcs-input form-control">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="pcs-input-container">
+                                <label class="pcs-form-label floating-label">Last Name<span>*</span></label>
+                                <input placeholder="" type="text" class="pcs-input form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-12 col-sm-12">
+                            <div class="pcs-input-container">
+                                <label class="pcs-form-label floating-label">Company Name</label>
+                                <input placeholder="" type="text" class="pcs-input form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="pcs-input-container">
+                        <label class="pcs-form-label floating-label">Address<span>*</span></label>
+                        <input placeholder="" type="text" class="pcs-input form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <!--City-->
+                        <div class="col-12 col-sm-3 mb-3 mb-sm-0">
+                            <div class="pcs-input-container">
+                                <label class="pcs-form-label floating-label">City<span>*</span></label>
+                                <input placeholder="" type="text" class="pcs-input form-control">
+                            </div>
+                        </div>
+                        <!--State-->
+                        <div class="col-6 col-sm-3 pr-2 pr-sm-3 mb-3 mb-sm-0">
+                            <select class="form-control">
+                                <option checked value="State">State<span>*</span></option>
+                            </select>
+                        </div>
+                        <!--Zip-->
+                        <div class="col-6 col-sm-3 pl-2 pl-sm-3">
+                            <div class="pcs-input-container">
+                                <label class="pcs-form-label floating-label">Zip Code<span>*</span></label>
+                                <input placeholder="" type="text" class="pcs-input form-control">
+                            </div>
+                        </div>
+                        <!--Country-->
+                        <div class="col-12 col-sm-3">
+                            <select class="form-control">
+                                <option checked value="Country">Country<span>*</span></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-6 col-sm-4 pr-2 pr-sm-3 mb-3 mb-sm-0">
+                            <div class="pcs-input-container">
+                                <label class="pcs-form-label floating-label">Phone Number<span>*</span></label>
+                                <input placeholder="" type="text" class="pcs-input form-control">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 pl-2 pl-sm-3">
+                            <div class="pcs-input-container">
+                                <label class="pcs-form-label floating-label">Cell Number<span>*</span></label>
+                                <input placeholder="" type="text" class="pcs-input form-control">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <div class="pcs-input-container">
+                                <label class="pcs-form-label floating-label">Email Address<span>*</span></label>
+                                <input placeholder="" type="text" class="pcs-input form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="payment-details">
+            <div class="container">
+                <h5 class="section-title mb-4">
+                    PAYMENT DETAILS
+                </h5>
+                <div class="amount-to-be-charged d-flex align-items-center mb-3">
+                    <p class="mb-0 mr-2">Your card will be charged</p>
+                    <p class="mb-0 amount-of-charge">$0.00</p>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-12 col-sm-4 mb-3 mb-sm-0">
+                            <select class="form-control">
+                                <option value="Card Type" checked>Card Type</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-sm-8">
+                            <div class="pcs-input-container">
+                                <label class="pcs-form-label floating-label">Card Number<span>*</span></label>
+                                <input placeholder="" type="text" class="pcs-input form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-6 col-sm-4 pr-2 pr-sm-3">
+                            <select class="form-control">
+                                <option checked value="Exp. month">Exp. Month</option>
+                            </select>
+                        </div>
+                        <div class="col-6 col-sm-4 pl-2 pl-sm-3 mb-3 mb-sm-0">
+                            <select class="form-control">
+                                <option checked value="Exp. Year">Exp. Year</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <div class="pcs-input-container">
+                                <label class="pcs-form-label floating-label">Security Code<span>*</span></label>
+                                <input placeholder="" type="text" class="pcs-input form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="donate-footer">
+            <div class="container">
+                <p class="mb-4">Security code: *This is the 3 or 4 digit number printed on the back signature panel. It
+                    is on the
+                    front of the card for American Express.</p>
+                <div class="text-center mb-3">
+                    <button class="btn-donate m-auto">DONATE</button>
+                </div>
+                <p class="text-center text-muted">PCS is a non-profit 501c3 organizations</p>
+            </div>
+        </section>
+    </section>
+</main>
+</body>
+</html>
