@@ -11,6 +11,7 @@ $(document).ready(function () {
     $("#freqOptionOnce").on('click', function () {
         $("#oneTimeDonation").prop("checked", true);
         $("#freqOptionRecurring").removeClass('active');
+        $('#freqSelect').prop( "disabled", true );
         $(this).addClass('active');
     });
 
@@ -21,6 +22,7 @@ $(document).ready(function () {
     $("#freqOptionRecurring").on('click', function () {
         $("#recurringDonation").prop("checked", true);
         $("#freqOptionOnce").removeClass('active');
+        $('#freqSelect').prop( "disabled", false );
         $(this).addClass('active');
     });
 
