@@ -111,12 +111,10 @@
             $("#freqOptionOnce").on('click', function () {
                 $("#oneTimeDonation").prop("checked", true);
                 $("#freqOptionRecurring").removeClass('active');
+                $('#periodSelect').val($("#periodSelect option:first").val());
                 $('#freqSelect').prop("disabled", true);
+                $("#freqSelect option").remove();
                 $(this).addClass('active');
-            });
-
-            $(".floating-label").on("click", function () {
-                $(this).next("input.pcs-input").focus();
             });
 
             $("#freqOptionRecurring").on('click', function () {
@@ -124,6 +122,10 @@
                 $("#freqOptionOnce").removeClass('active');
                 $('#periodSelect').prop("disabled", false);
                 $(this).addClass('active');
+            });
+
+            $(".floating-label").on("click", function () {
+                $(this).next("input.pcs-input").focus();
             });
 
             //Label on Focus
