@@ -66,14 +66,29 @@
                     '9': '9',
                     '10': '10',
                 };
+                var freqOptionsWeekly = {
+                    '1': '1',
+                    '2': '2',
+                    '3': '3',
+                    '4': '4',
+                    '5': '5',
+                    '6': '6',
+                    '7': '7',
+                    '8': '8',
+                    '9': '9',
+                    '10': '10',
+                };
                 switch (value) {
-                    case '':
+                    case'':
                         $("#freqSelect").prop('disabled', true);
                         $("#freqSelect option").remove();
                         break;
-                    case 'Weekly':
-                        $("#freqSelect").prop('disabled', true);
+                    case'Weekly':
+                        $("#freqSelect").prop('disabled', false);
                         $("#freqSelect option").remove();
+                        $.each(freqOptionsWeekly, function (index, value) {
+                            $("#freqSelect").append($('<option>', {value:value, text:index}));
+                        });
                         break;
                     case'Monthly':
                         $("#freqSelect").prop('disabled', false);
