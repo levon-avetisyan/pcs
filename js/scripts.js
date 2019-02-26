@@ -112,6 +112,7 @@
                 $("#oneTimeDonation").prop("checked", true);
                 $("#freqOptionRecurring").removeClass('active');
                 $('#periodSelect').val($("#periodSelect option:first").val());
+                $('#periodSelect').prop("disabled", true);
                 $('#freqSelect').prop("disabled", true);
                 $("#freqSelect option").remove();
                 $(this).addClass('active');
