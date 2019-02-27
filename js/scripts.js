@@ -87,21 +87,21 @@
                         $("#freqSelect").prop('disabled', false);
                         $("#freqSelect option").remove();
                         $.each(freqOptionsWeekly, function (index, value) {
-                            $("#freqSelect").append($('<option>', {value:value, text:index}));
+                            $("#freqSelect").append($('<option>', {value: value, text: index}));
                         });
                         break;
                     case'Monthly':
                         $("#freqSelect").prop('disabled', false);
                         $("#freqSelect option").remove();
                         $.each(freqOptionsMonthly, function (index, value) {
-                            $("#freqSelect").append($('<option>', {value:value, text:index}));
+                            $("#freqSelect").append($('<option>', {value: value, text: index}));
                         });
                         break;
                     case'Yearly':
                         $("#freqSelect").prop('disabled', false);
                         $("#freqSelect option").remove();
                         $.each(freqOptionsYearly, function (index, value) {
-                            $("#freqSelect").append($('<option>', {value:value, text:index}));
+                            $("#freqSelect").append($('<option>', {value: value, text: index}));
                         });
                         break;
                     default:
@@ -111,8 +111,7 @@
             $("#freqOptionOnce").on('click', function () {
                 $("#oneTimeDonation").prop("checked", true);
                 $("#freqOptionRecurring").removeClass('active');
-                $('#periodSelect').val($("#periodSelect option:first").val());
-                $('#periodSelect').prop("disabled", true);
+                $('#periodSelect').val($("#periodSelect option:first").val()).prop("disabled", true);
                 $('#freqSelect').prop("disabled", true);
                 $("#freqSelect option").remove();
                 $(this).addClass('active');
@@ -133,7 +132,11 @@
             $(".pcs-input").focus(function () {
                 $(this).parent().addClass("focused");
             }).blur(function () {
-                $(this).parent().removeClass("focused");
+                if ($(this).val()) {
+                    return false;
+                } else {
+                    $(this).parent().removeClass("focused");
+                }
             });
         });
 
