@@ -196,6 +196,15 @@ section.choose-amount .custom-amount .custom-amount-container .pcs-input-contain
     border-top: none;
     border-right: none;
     border-radius: 0;
+    -webkit-appearance:none;
+    -moz-appearance:textfield; /* Firefox */
+}
+
+section.choose-amount .custom-amount .custom-amount-container .pcs-input-container input::-webkit-outer-spin-button,
+section.choose-amount .custom-amount .custom-amount-container .pcs-input-container input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 section.choose-amount .custom-amount .custom-amount-container .pcs-input-container input:focus, section.choose-amount .custom-amount .custom-amount-container .pcs-input-container input:active {

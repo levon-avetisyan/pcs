@@ -26,7 +26,7 @@
 </head>
 <body>
 <main>
-    <form action="">
+    <form>
         <section class="main">
             <section class="choose-amount">
                 <div class="container">
@@ -39,73 +39,74 @@
                         <div class="row">
                             <div class="col-12 col-sm-6 col-md-3">
                                 <div class="amount-wrap">
-                                    <label for="amountXXL">
+                                    <label for="1000">
                                         <span class="package-amount">$1000</span>
                                         <span class="package-name">PARNAS HASHANASH</span>
-                                        <input type="radio" name="amount" id="amountXXL" value="1000">
+                                        <input type="radio" name="orderid" id="1000" value="PARNAS HASHANASH">
                                     </label>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-md-3">
                                 <div class="amount-wrap">
-                                    <label for="amountXL">
+                                    <label for="750">
                                         <span class="package-amount">$750</span>
                                         <span class="package-name">PARNAS CHATZI HASHANASH</span>
-                                        <input type="radio" name="amount" id="amountXL" value="750">
+                                        <input type="radio" name="orderid" id="750"
+                                               value="PARNAS CHATZI HASHANASH">
                                     </label>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-md-3">
                                 <div class="amount-wrap">
-                                    <label for="amountX">
+                                    <label for="500">
                                         <span class="package-amount">$500</span>
                                         <span class="package-name">PARNAS HACHODESH</span>
-                                        <input type="radio" name="amount" id="amountX" value="500">
+                                        <input type="radio" name="orderid" id="500" value="PARNAS HACHODESH">
                                     </label>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-md-3">
                                 <div class="amount-wrap">
-                                    <label for="amountLG">
+                                    <label for="360">
                                         <span class="package-amount">$360</span>
                                         <span class="package-name">PARNAS HASHAVUAH</span>
-                                        <input type="radio" name="amount" id="amountLG" value="350">
+                                        <input type="radio" name="orderid" id="360" value="PARNAS HASHAVUAH">
                                     </label>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-md-3">
                                 <div class="amount-wrap">
-                                    <label for="amountMD">
+                                    <label for="180">
                                         <span class="package-amount">$180</span>
                                         <span class="package-name">PARNAS HAYOIM</span>
-                                        <input type="radio" name="amount" id="amountMD" value="180">
+                                        <input type="radio" name="orderid" id="180" value="PARNAS HAYOIM">
                                     </label>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-md-3">
                                 <div class="amount-wrap">
-                                    <label for="amountSM">
+                                    <label for="72">
                                         <span class="package-amount">$72</span>
                                         <span class="package-name">PARNOSAH PARTNER</span>
-                                        <input type="radio" name="amount" id="amountSM" value="75">
+                                        <input type="radio" name="orderid" id="72" value="PARNOSAH PARTNER">
                                     </label>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-md-3">
                                 <div class="amount-wrap">
-                                    <label for="amountXS">
+                                    <label for="54">
                                         <span class="package-amount">$54</span>
                                         <span class="package-name">PCS DONOR</span>
-                                        <input type="radio" name="amount" id="amountXS" value="54">
+                                        <input type="radio" name="orderid" id="54" value="PCS DONOR">
                                     </label>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-md-3">
                                 <div class="amount-wrap">
-                                    <label for="amountXXS">
+                                    <label for="36">
                                         <span class="package-amount">$36</span>
                                         <span class="package-name">FRIENDS OF PCS</span>
-                                        <input type="radio" name="amount" id="amountXXS" value="36">
+                                        <input type="radio" name="orderid" id="36" value="FRIENDS OF PCS">
                                     </label>
                                 </div>
                             </div>
@@ -116,7 +117,8 @@
                             <h5>Enter Your Donation Amount</h5>
                             <div class="pcs-input-container d-flex justify-content-center align-items-center">
                                 <i class="fas fa-dollar-sign"></i>
-                                <input id="donationAmountInput" type="text" class="pcs-input form-control"
+                                <input id="donationAmountInput" name="amount" oninput="validity.valid||(value='');"
+                                       type="number" class="pcs-input form-control"
                                        placeholder="">
                                 <span class="notation">.00</span>
                             </div>
@@ -130,27 +132,26 @@
                         <div class="frequency-options d-flex flex-column flex-sm-row justify-content-around align-items-center">
                             <div id="freqOptionOnce" class="frequency-option one-time-freq mr-0 mr-sm-4 mb-4 mb-sm-0">
                                 <div class="custom-control custom-radio">
-                                    <input type="radio" class="custom-control-input" id="oneTimeDonation"
-                                           name="donationFrequency" value="oneTime">
+                                    <input type="radio" class="custom-control-input" name="addcustomer" id="oneTimeDonation" value="oneTime">
                                     <label class="custom-control-label" for="oneTimeDonation">ONE TIME DONATION</label>
                                 </div>
                             </div>
                             <div id="freqOptionRecurring" class="frequency-option">
                                 <div class="custom-control custom-radio">
                                     <input type="radio" class="custom-control-input" id="recurringDonation"
-                                           name="donationFrequency"
+                                           name="addcustomer"
                                            value="recurring">
                                     <label class="custom-control-label" for="recurringDonation">RECURRING
                                         DONATION</label>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-between flex-column flex-sm-row">
-                                    <select id="periodSelect" class="period-select form-control mr-0 mr-sm-3 mb-3 mb-sm-0" disabled>
-                                        <option value="" checked>Select Period</option>
+                                    <select id="periodSelect" name="schedule" class="period-select form-control mr-0 mr-sm-3 mb-3 mb-sm-0" disabled>
+                                        <option value="" checked>Schedule</option>
                                         <option value="Weekly">Weekly</option>
                                         <option value="Monthly">Monthly</option>
                                         <option value="Yearly">Yearly</option>
                                     </select>
-                                    <select id="freqSelect" class="frequency-select form-control" disabled>
+                                    <select id="freqSelect" class="frequency-select form-control" name="numleft" disabled>
                                     </select>
                                 </div>
                             </div>
@@ -188,7 +189,7 @@
                             <div class="form-group">
                                 <div class="pcs-input-container mb-3 mb-sm-0">
                                     <label class="pcs-form-label floating-label">Name</label>
-                                    <input placeholder="" type="text" class="pcs-input form-control">
+                                    <input placeholder="" name="description" type="text" class="pcs-input form-control">
                                 </div>
                             </div>
                         </div>
@@ -198,11 +199,11 @@
                                 and
                                 zip), or email
                                 address, and your message below.</label>
-                            <input placeholder="" type="text" class="pcs-input form-control">
+                            <input placeholder="" name="custom1" type="text" class="pcs-input form-control">
                         </div>
                         <div class="form-group">
                             <label class="pcs-form-label">Additional comments</label>
-                            <textarea placeholder="" type="text" class="pcs-input pcs-textarea form-control"></textarea>
+                            <textarea placeholder="" name="comments" type="text" class="pcs-input pcs-textarea form-control"></textarea>
                         </div>
                     </div>
                 </div>
@@ -218,13 +219,13 @@
                             <div class="col-12 col-sm-6 mb-3 mb-sm-0">
                                 <div class="pcs-input-container">
                                     <label class="pcs-form-label floating-label">First Name<span>*</span></label>
-                                    <input placeholder="" type="text" class="pcs-input form-control">
+                                    <input placeholder="" name="billfname" type="text" class="pcs-input form-control">
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6">
                                 <div class="pcs-input-container">
                                     <label class="pcs-form-label floating-label">Last Name<span>*</span></label>
-                                    <input placeholder="" type="text" class="pcs-input form-control">
+                                    <input placeholder="" name="billlname" type="text" class="pcs-input form-control">
                                 </div>
                             </div>
                         </div>
@@ -234,7 +235,7 @@
                             <div class="col-12 col-sm-12">
                                 <div class="pcs-input-container">
                                     <label class="pcs-form-label floating-label">Company Name</label>
-                                    <input placeholder="" type="text" class="pcs-input form-control">
+                                    <input placeholder="" name="billcompany" type="text" class="pcs-input form-control">
                                 </div>
                             </div>
                         </div>
@@ -242,7 +243,7 @@
                     <div class="form-group">
                         <div class="pcs-input-container">
                             <label class="pcs-form-label floating-label">Address<span>*</span></label>
-                            <input placeholder="" type="text" class="pcs-input form-control">
+                            <input placeholder="" name="billstreet" type="text" class="pcs-input form-control">
                         </div>
                     </div>
                     <div class="form-group">
@@ -251,12 +252,12 @@
                             <div class="col-12 col-sm-3 mb-3 mb-sm-0">
                                 <div class="pcs-input-container">
                                     <label class="pcs-form-label floating-label">City<span>*</span></label>
-                                    <input placeholder="" type="text" class="pcs-input form-control">
+                                    <input name="billcity" placeholder="" type="text" class="pcs-input form-control">
                                 </div>
                             </div>
                             <!--State-->
                             <div class="col-6 col-sm-3 pr-2 pr-sm-3 mb-3 mb-sm-0">
-                                <select class="form-control">
+                                <select name="billstate" class="form-control">
                                     <option checked value="State">State<span>*</span></option>
                                 </select>
                             </div>
@@ -264,12 +265,12 @@
                             <div class="col-6 col-sm-3 pl-2 pl-sm-3">
                                 <div class="pcs-input-container">
                                     <label class="pcs-form-label floating-label">Zip Code<span>*</span></label>
-                                    <input placeholder="" type="text" class="pcs-input form-control">
+                                    <input name="billzip" placeholder="" type="text" class="pcs-input form-control">
                                 </div>
                             </div>
                             <!--Country-->
                             <div class="col-12 col-sm-3">
-                                <select class="form-control">
+                                <select name="billcountry" class="form-control">
                                     <option checked value="Country">Country<span>*</span></option>
                                 </select>
                             </div>
@@ -280,19 +281,19 @@
                             <div class="col-6 col-sm-4 pr-2 pr-sm-3 mb-3 mb-sm-0">
                                 <div class="pcs-input-container">
                                     <label class="pcs-form-label floating-label">Phone Number<span>*</span></label>
-                                    <input placeholder="" type="text" class="pcs-input form-control">
+                                    <input name="billphone" placeholder="" type="text" class="pcs-input form-control">
                                 </div>
                             </div>
                             <div class="col-6 col-sm-4 pl-2 pl-sm-3">
                                 <div class="pcs-input-container">
                                     <label class="pcs-form-label floating-label">Cell Number<span>*</span></label>
-                                    <input placeholder="" type="text" class="pcs-input form-control">
+                                    <input name="billfax" placeholder="" type="text" class="pcs-input form-control">
                                 </div>
                             </div>
                             <div class="col-12 col-sm-4">
                                 <div class="pcs-input-container">
                                     <label class="pcs-form-label floating-label">Email Address<span>*</span></label>
-                                    <input placeholder="" type="text" class="pcs-input form-control">
+                                    <input name="email" placeholder="" type="text" class="pcs-input form-control">
                                 </div>
                             </div>
                         </div>
@@ -308,50 +309,15 @@
                         <p class="mb-0 mr-2">Your card will be charged</p>
                         <p class="mb-0 amount-of-charge">$<span id="amountOfCharge">0</span>.00</p>
                     </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-12 col-sm-4 mb-3 mb-sm-0">
-                                <select class="form-control">
-                                    <option value="Card Type" checked>Card Type</option>
-                                </select>
-                            </div>
-                            <div class="col-12 col-sm-8">
-                                <div class="pcs-input-container">
-                                    <label class="pcs-form-label floating-label">Card Number<span>*</span></label>
-                                    <input placeholder="" type="text" class="pcs-input form-control">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-6 col-sm-4 pr-2 pr-sm-3">
-                                <select class="form-control">
-                                    <option checked value="Exp. month">Exp. Month</option>
-                                </select>
-                            </div>
-                            <div class="col-6 col-sm-4 pl-2 pl-sm-3 mb-3 mb-sm-0">
-                                <select class="form-control">
-                                    <option checked value="Exp. Year">Exp. Year</option>
-                                </select>
-                            </div>
-                            <div class="col-12 col-sm-4">
-                                <div class="pcs-input-container">
-                                    <label class="pcs-form-label floating-label">Security Code<span>*</span></label>
-                                    <input placeholder="" type="text" class="pcs-input form-control">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="custom-control custom-checkbox mb-3">
-                        <input type="checkbox" class="custom-control-input" id="emailReceipt">
+                        <input name="custom2" type="checkbox" class="custom-control-input" id="emailReceipt">
                         <label class="custom-control-label" for="emailReceipt">Please mail a receipt to the address
                             above
                             (in
                             addition to the receipt I will receive via email).</label>
                     </div>
                     <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="addEmailingList">
+                        <input name="custom3" type="checkbox" class="custom-control-input" id="addEmailingList">
                         <label class="custom-control-label" for="addEmailingList">Please add me to the Emailing
                             List</label>
                     </div>
@@ -369,6 +335,7 @@
                     <p class="text-center text-muted">PCS is a non-profit 501c3 organizations</p>
                 </div>
             </section>
+        </section>
     </form>
     </section>
 </main>

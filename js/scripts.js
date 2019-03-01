@@ -29,18 +29,20 @@
 
         $(document).ready(function () {
 
-            $("input[name='amount']").on('change', function () {
+            $("input[name='orderid']").on('change', function () {
                 $('input:radio[name=' + $(this).attr('name') + ']').parent().parent().removeClass('active');
                 $(this).parent().parent().addClass('active');
             });
 
-            $("input[name='amount']").on('click', function () {
-                $('#donationAmountInput').val($(this).val()).on('focus', function () {
+            $("input[name='orderid']").on('click', function () {
+                $('#donationAmountInput').val($(this).attr('id')).on('focus', function () {
                     $("input[name='amount']").parent().parent().removeClass('active');
-                }).on('blur', function () {
-                    $("#amountOfCharge").text($(this).val());
                 });
-                $("#amountOfCharge").text($(this).val())
+                $("#amountOfCharge").text($(this).attr('id'))
+            });
+
+            $("input[name='amount']").on('blur', function () {
+                $("#amountOfCharge").text($(this).val());
             });
 
             $("#periodSelect").on('change', function () {
